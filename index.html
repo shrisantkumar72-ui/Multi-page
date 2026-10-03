@@ -3,61 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ModernTech - Home</title>
+  <title>Nexus Studio — Digital Engineering & Product Design</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header Navigation -->
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo">⚡ Modern<span>Tech</span></a>
-      <ul class="nav-links">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        </div>
+        <span>Nexus<span style="color: var(--primary)">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="nav-actions">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
-        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+
+      <div class="nav-right">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark/Light Mode">
+          <span id="theme-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/></svg>
+          </span>
+        </button>
+        <button id="mobile-toggle" class="icon-btn mobile-toggle" aria-label="Open Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
       </div>
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <section class="hero">
-      <h1>Build Faster, Scale Smarter</h1>
-      <p>A clean, responsive, and lightweight multi-page web application template built with pure HTML5, CSS3, and modern JavaScript.</p>
-      <div class="hero-buttons">
-        <a href="services.html" class="btn btn-primary">Our Services</a>
-        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Available for Q4 Client Projects
+      </div>
+      <h1 class="hero-title">
+        Engineering modern digital products with <span class="gradient-text">precision</span>.
+      </h1>
+      <p class="hero-subtitle">
+        We partner with forward-thinking startups and enterprises to build high-performance web applications, fluid interfaces, and scalable cloud systems.
+      </p>
+      <div class="btn-group">
+        <a href="services.html" class="btn btn-primary">
+          Explore Capabilities
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="contact.html" class="btn btn-secondary">
+          Schedule a Consultation
+        </a>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">Why Choose Us</h2>
-      <p class="section-subtitle">Delivering high-performance digital experiences</p>
-      <div class="grid-3">
-        <div class="card">
-          <div class="card-icon">⚡</div>
-          <h3>Blazing Fast</h3>
-          <p>Zero bloat, pure vanilla performance with instant load times and optimized assets.</p>
+    <!-- Metrics Bar -->
+    <section class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number gradient-text">99.9%</div>
+        <div class="stat-label">System Uptime & SLA</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number gradient-text">120+</div>
+        <div class="stat-label">Deployments Delivered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number gradient-text">&lt;80ms</div>
+        <div class="stat-label">Average Edge Latency</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number gradient-text">4.9/5</div>
+        <div class="stat-label">Client Satisfaction Score</div>
+      </div>
+    </section>
+
+    <!-- Capabilities / Bento Grid -->
+    <section style="margin-top: 5rem;">
+      <div class="section-header">
+        <h2>Core Expertise</h2>
+        <p>Combining rigorous software engineering with bespoke interface design.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="bento-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3>Full-Stack Web Architecture</h3>
+          <p>End-to-end development focused on high-concurrency, accessibility, and zero-latency user flows.</p>
+          <div class="card-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">Next.js / Node</span>
+            <span class="tag">WebSockets</span>
+          </div>
         </div>
-        <div class="card">
-          <div class="card-icon">📱</div>
-          <h3>Fully Responsive</h3>
-          <p>Flawless layout across all screen sizes from mobile devices to desktop monitors.</p>
+
+        <div class="bento-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+          </div>
+          <h3>Design Systems & UI Engineering</h3>
+          <p>Cohesive brand languages, micro-interactions, and component frameworks built for scale.</p>
+          <div class="card-tags">
+            <span class="tag">Figma Tokens</span>
+            <span class="tag">Micro-Animations</span>
+            <span class="tag">WCAG 2.1 AAA</span>
+          </div>
         </div>
-        <div class="card">
-          <div class="card-icon">🎨</div>
-          <h3>Modern Theme</h3>
-          <p>Built-in light/dark theme switcher with persisted user preferences.</p>
+
+        <div class="bento-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+          </div>
+          <h3>Cloud & Edge Infrastructure</h3>
+          <p>Automated CI/CD pipelines, global CDN routing, serverless clusters, and 24/7 telemetry monitoring.</p>
+          <div class="card-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Cloudflare Edge</span>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+      <h2>Have a project in mind?</h2>
+      <p>Let's collaborate to build something exceptional. Get in touch with our team today.</p>
+      <a href="contact.html" class="btn btn-primary">
+        Start a Conversation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2026 ModernTech. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <span>Nexus Studio</span>
+        </a>
+        <p>Crafting bespoke digital products for forward-thinking brands.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nexus Studio. All rights reserved. Engineered with precision.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>

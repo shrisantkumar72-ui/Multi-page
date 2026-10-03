@@ -3,55 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ModernTech - About Us</title>
+  <title>About Us — Nexus Studio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header Navigation -->
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo">⚡ Modern<span>Tech</span></a>
-      <ul class="nav-links">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        </div>
+        <span>Nexus<span style="color: var(--primary)">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="nav-actions">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
-        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+
+      <div class="nav-right">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark/Light Mode">
+          <span id="theme-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/></svg>
+          </span>
+        </button>
+        <button id="mobile-toggle" class="icon-btn mobile-toggle" aria-label="Open Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
       </div>
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <section class="hero">
-      <h1>About ModernTech</h1>
-      <p>We are a dedicated team of engineers and designers creating modern web applications.</p>
+    <section class="hero-section">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Our Origin & Philosophy
+      </div>
+      <h1 class="hero-title">
+        Building the web of tomorrow, <span class="gradient-text">today</span>.
+      </h1>
+      <p class="hero-subtitle">
+        We are a boutique studio of senior developers and designers driven by obsessive craftsmanship, clean architecture, and meaningful user interactions.
+      </p>
     </section>
 
-    <section>
-      <div class="grid-3">
-        <div class="card">
-          <div class="card-icon">🎯</div>
-          <h3>Our Mission</h3>
-          <p>To provide lightweight, robust, and elegant solutions that empower creators and businesses worldwide.</p>
+    <!-- Company Story & Principles -->
+    <section style="margin-top: 2rem;">
+      <div class="cards-grid">
+        <div class="bento-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
+          </div>
+          <h3>Performance First</h3>
+          <p>Every millisecond counts. We optimize asset delivery, minimize client-side bundle weight, and ensure instant rendering across low-bandwidth networks.</p>
         </div>
-        <div class="card">
-          <div class="card-icon">💡</div>
-          <h3>Our Vision</h3>
-          <p>Innovating web standards with high accessibility, lightning performance, and intuitive user experiences.</p>
+
+        <div class="bento-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Zero-Compromise Security</h3>
+          <p>Built with modern web security best practices: CSP headers, sanitized inputs, enterprise authentication workflows, and robust data isolation.</p>
         </div>
-        <div class="card">
-          <div class="card-icon">🤝</div>
-          <h3>Our Values</h3>
-          <p>Simplicity, transparency, and continuous improvement in every line of code we write.</p>
+
+        <div class="bento-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Direct Engineering Access</h3>
+          <p>You collaborate directly with principal engineers and product leads—eliminating bureaucracy and translating feedback into shipping code immediately.</p>
         </div>
       </div>
     </section>
+
+    <!-- Standards Section -->
+    <section class="stats-bar" style="margin-top: 4.5rem;">
+      <div class="stat-item">
+        <div class="stat-number gradient-text">100%</div>
+        <div class="stat-label">TypeScript / Modern JS</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number gradient-text">A11y</div>
+        <div class="stat-label">Accessibility Compliance</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number gradient-text">Global</div>
+        <div class="stat-label">Distributed Client Base</div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <h2>Ready to build something unforgettable?</h2>
+      <p>Let's discuss how we can turn your architectural challenges into competitive advantages.</p>
+      <a href="contact.html" class="btn btn-primary">
+        Work With Us
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2026 ModernTech. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <span>Nexus Studio</span>
+        </a>
+        <p>Crafting bespoke digital products for forward-thinking brands.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nexus Studio. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
