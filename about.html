@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us — Nexus Studio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2.5">
 </head>
 <body>
 
@@ -13,7 +16,7 @@
     <nav class="navbar">
       <a href="index.html" class="brand">
         <div class="brand-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
         </div>
         <span>Nexus<span style="color: var(--primary)">.</span></span>
       </a>
@@ -28,11 +31,11 @@
       <div class="nav-right">
         <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark/Light Mode">
           <span id="theme-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/></svg>
           </span>
         </button>
         <button id="mobile-toggle" class="icon-btn mobile-toggle" aria-label="Open Navigation Menu">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
         </button>
       </div>
     </nav>
@@ -58,7 +61,7 @@
       <div class="cards-grid">
         <div class="bento-card">
           <div class="card-icon-box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
           </div>
           <h3>Performance First</h3>
           <p>Every millisecond counts. We optimize asset delivery, minimize client-side bundle weight, and ensure instant rendering across low-bandwidth networks.</p>
@@ -66,7 +69,7 @@
 
         <div class="bento-card">
           <div class="card-icon-box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <h3>Zero-Compromise Security</h3>
           <p>Built with modern web security best practices: CSP headers, sanitized inputs, enterprise authentication workflows, and robust data isolation.</p>
@@ -74,7 +77,7 @@
 
         <div class="bento-card">
           <div class="card-icon-box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <h3>Direct Engineering Access</h3>
           <p>You collaborate directly with principal engineers and product leads—eliminating bureaucracy and translating feedback into shipping code immediately.</p>
@@ -83,18 +86,22 @@
     </section>
 
     <!-- Standards Section -->
-    <section class="stats-bar" style="margin-top: 4.5rem;">
+    <section class="stats-bar" style="margin-top: 4rem;">
       <div class="stat-item">
         <div class="stat-number gradient-text">100%</div>
-        <div class="stat-label">TypeScript / Modern JS</div>
+        <div class="stat-label">Modern JavaScript</div>
       </div>
       <div class="stat-item">
         <div class="stat-number gradient-text">A11y</div>
         <div class="stat-label">Accessibility Compliance</div>
       </div>
       <div class="stat-item">
+        <div class="stat-number gradient-text">&lt;1s</div>
+        <div class="stat-label">Initial Load Time</div>
+      </div>
+      <div class="stat-item">
         <div class="stat-number gradient-text">Global</div>
-        <div class="stat-label">Distributed Client Base</div>
+        <div class="stat-label">Distributed Clients</div>
       </div>
     </section>
 
@@ -104,7 +111,7 @@
       <p>Let's discuss how we can turn your architectural challenges into competitive advantages.</p>
       <a href="contact.html" class="btn btn-primary">
         Work With Us
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
       </a>
     </section>
   </main>
@@ -115,7 +122,7 @@
       <div class="footer-brand">
         <a href="index.html" class="brand">
           <div class="brand-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
           </div>
           <span>Nexus Studio</span>
         </a>
@@ -135,6 +142,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2.5"></script>
 </body>
 </html>
